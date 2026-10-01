@@ -1,0 +1,41 @@
+{
+  "name": "keyword-search-bot",
+  "description": "Ultra-Fast Telegram Keyword Search Bot",
+  "repository": "https://github.com/yourusername/SearchBotRepo",
+  "keywords": ["telegram", "bot", "search", "pyrogram"],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash from my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot Token from @BotFather",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram User ID (use /myid)",
+      "required": true
+    },
+    "MONGODB_URI": {
+      "description": "MongoDB URI string for database persistence.",
+      "required": false
+    },
+    "LOG_CHANNEL_ID": {
+      "description": "Telegram Channel ID to receive final Search Results (TXT & CSV) automatically.",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {"url": "heroku/python"}
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+}

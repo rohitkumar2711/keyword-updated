@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.session
+*.session-journal
+bot_data.db
+bot_data.db-*
+.env
+.git
+.gitignore
+*.md

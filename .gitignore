@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.env
+*.session
+*.session-journal
+bot_data.db
+bot_data.db-*
+data/
+*.log
